@@ -28,6 +28,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_BASH: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BRANCH: prod
       - name: Summary
         if: always()
         run: |
